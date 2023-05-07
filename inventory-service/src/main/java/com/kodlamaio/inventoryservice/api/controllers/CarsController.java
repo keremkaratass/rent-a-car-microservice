@@ -1,4 +1,4 @@
-package com.kodlamaio.inventoryservice.api.controller;
+package com.kodlamaio.inventoryservice.api.controllers;
 
 import com.kodlamaio.inventoryservice.business.abstracts.CarService;
 import com.kodlamaio.inventoryservice.business.dto.requests.create.CreateCarRequest;

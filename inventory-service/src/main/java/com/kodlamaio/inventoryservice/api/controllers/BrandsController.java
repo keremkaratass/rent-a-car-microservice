@@ -1,4 +1,4 @@
-package com.kodlamaio.inventoryservice.api.controller;
+package com.kodlamaio.inventoryservice.api.controllers;
 
 import com.kodlamaio.inventoryservice.business.abstracts.BrandService;
 import com.kodlamaio.inventoryservice.business.dto.requests.create.CreateBrandRequest;
