@@ -11,17 +11,19 @@ import java.util.UUID;
 public interface FilterService {
     List<GetAllFiltersResponse> getAll();
 
-    GetFilterResponse getById(UUID id);
+    GetFilterResponse getById(String id);
 
     void add(Filter filter);
 
-    void delete(UUID id);
+    void delete(String id);
 
     void deleteAllByBrandId(UUID brandId);
 
     void deleteAllByModelId(UUID modelId);
 
     void deleteByCarId(UUID carId);
+
+    Filter getByCarId(UUID carId);
 
 
 }
