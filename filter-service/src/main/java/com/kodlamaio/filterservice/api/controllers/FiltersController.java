@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @AllArgsConstructor
@@ -17,13 +18,33 @@ import java.util.List;
 public class FiltersController {
     private final FilterService service;
 
+  /*  @PostConstruct //db de bir tane ekleme işlemi yapıcak
+    public void createDb() {
+        var filter = new Filter();
+        filter.setBrandName("test");
+        filter.setModelName("testx");
+        service.add(filter);
+    }*/
+    //! veri tabanı oluştu bir kere çalıştırdık o nedenle kaldırdık daha
+    // var filter.... bu da veri olsun diye
+
+//    @PostConstruct
+//    public void createDb() {
+//        var filter = new Filter();
+//        filter.setBrandName("test");
+//        filter.setModelName("testx");
+//        service.add(filter);
+//
+//    }
+
+
     @GetMapping
     public List<GetAllFiltersResponse> getAll() {
         return service.getAll();
     }
 
     @GetMapping("/{id}")
-    public GetFilterResponse getById(@PathVariable String id) {
+    public GetFilterResponse getById(@PathVariable UUID id) {
         return service.getById(id);
     }
 }
