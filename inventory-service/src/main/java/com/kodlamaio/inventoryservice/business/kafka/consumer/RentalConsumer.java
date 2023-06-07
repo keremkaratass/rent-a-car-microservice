@@ -1,5 +1,6 @@
 package com.kodlamaio.inventoryservice.business.kafka.consumer;
 
+
 import com.kodlamaio.commonpackage.events.rental.RentalCreatedEvent;
 import com.kodlamaio.commonpackage.events.rental.RentalDeletedEvent;
 import com.kodlamaio.inventoryservice.business.abstracts.CarService;

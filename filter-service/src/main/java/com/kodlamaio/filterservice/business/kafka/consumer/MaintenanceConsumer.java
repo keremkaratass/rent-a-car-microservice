@@ -1,6 +1,8 @@
 package com.kodlamaio.filterservice.business.kafka.consumer;
 
 
+import com.kodlamaio.commonpackage.events.maintenance.MaintenanceCreatedEvent;
+import com.kodlamaio.commonpackage.events.maintenance.MaintenanceDeletedEvent;
 import com.kodlamaio.filterservice.business.abstracts.FilterService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
